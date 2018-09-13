@@ -1,0 +1,239 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage{hanging}
+\usepackage{parskip}
+\usepackage[compact]{titlesec}
+\usepackage[warn]{textcomp}
+\usepackage{pifont}
+\usepackage{natbib, bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+
+\usepackage{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\pagestyle{empty}
+
+% Set your name here
+\def\name{Yang Wang}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+\hypersetup{pdfstartview={XYZ null null 1.00}}
+
+\geometry{
+%  body={6.5in, 8.5in},
+  left=0.5in,
+  right =0.5in,
+  top=0.5in,
+  bottom=0.5in,
+}
+
+% Customize page headers
+%\pagestyle{myheadings}
+%\markright{\name}
+%\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\bfseries\large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+%\renewenvironment{itemize}{
+%  \begin{list}{}{
+%    \setlength{\leftmargin}{1.5em}
+%  }
+%}{
+%  \end{list}
+%}
+\renewcommand{\labelitemii}{\ding{226}}
+
+\begin{document}
+
+% Place name at left
+%{\huge \name}
+
+% Alternatively, print name centered and bold:
+\centerline{\LARGE \bf \name}
+
+%\vspace{0.25in}
+
+\begin{minipage}{\linewidth}
+%\href{http://*}{}
+\begin{center}
+21 Brookline Street, Cambridge, MA, 02139, United States\\
+Email: \href{mailto:guliyolanda@gmail.com}{\tt guliyolanda@gmail.com} , Tel: +1(617)7109267 \\
+Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.io} \\
+\end{center}
+\end{minipage}
+
+\vspace{0pt}
+\rule{\textwidth}{1pt}
+%\ul{\Huge\textbf{Some text\mbox{\hspace{1in}}}}
+
+\vspace{-12pt}
+\section*{Research Interests}
+\vspace{-10pt}
+\begin{itemize}
+\item Computational Fluid Dynamics (CFD) in multi-disciplinary applications
+\item Computational Aero-Acoustics (CAA)
+\item Heat and mass/species transfer/transport problems
+\item CAD/Node-based shape deformation and gradient-based optimisation
+\item Numerical modeling and optimization
+\end{itemize} 
+
+\vspace{-12pt}
+\section*{Skills}
+\vspace{-10pt}
+\begin{itemize}
+\item Finite Volume Method and Spectral Element Method
+\item Numerical methods for Partial Differential Equations: algorithms, discretisation schemes and linear solvers
+\item Fortran, MATLAB/Octave and C++ programming
+%\item Chemical Engineering process/system simulation tool: Aspen Plus
+\item CFD tools/software such as GMSH, ICEM, ParaView, OpenFOAM, Fluent and etc
+\item Automatic Differentiation tool TAPENADE
+\item Linux operation systems, Vim, Meld, Make, Git, Doxygen, Gprof, and HYPRE open source libraries 
+\end{itemize}
+
+\vspace{-12pt}
+\section*{Education}
+\vspace{-10pt}
+\begin{itemize}
+  \item 2012. 9 - 2017. 1 PhD in Mechanical Engineering, Queen Mary, University of London, United Kingdom
+  \item 2009. 9 - 2012. 6 MSc in Power Engineering and Thermophysics, Xi’an Jiaotong University, China
+  \item 2005. 9 - 2009. 7 BEng in Energy and Power Engineering, Xi’an Jiaotong University, China
+\end{itemize}
+
+\vspace{-12pt}
+\section*{Academic experience}
+\vspace{-10pt}
+\begin{itemize}
+\item 2017. 11 - present \hspace{2pt} Parenting and working from home during relocation, Cambridge, USA
+		\begin{itemize}
+		\item Mass/species transportation coupling with standard CFD flow solvers
+		\item Multi-phase flow based on the Volume Of Fluid (VOF) method
+		\item	Journal papers writing and revision; paper reviewing work invited by journal editors
+		\end{itemize}		
+\item 2017. 3 - 2017. 10  \hspace{2pt} Research fellow on projects funded by Engineering and Physical Science Research Council (EPSRC), School of Engineering, University of Warwick, Coventry, United Kingdom
+		\begin{itemize}
+		\item	Next Generation Grid Scale Thermal Energy Storage Technologies: Novel system design for Compressed Air Energy Storage (CAES) coupled with Reverse Osmosis (RO) water producing process
+		\item	Ultra-Supercritical (USC) steam power generation technology with Circulating Fluidized Bed (CFB): Combustion, Materials and Modelling: Heat transfer numerical model of CFB boiler integrated with water-wall heat exchange
+		\end{itemize}
+
+\item 2012. 9 - 2017. 1  \hspace{2pt} PhD candidate working on the project About Flow funded by the European commission
+		\begin{itemize}
+		\item Development of integrated CFD and adjoint sensitivity solvers
+		\item	SIMPLE-like algorithms vs. Pressure Schur Complement (PSC) method theatrical derivation
+		\item	Automatic Differentiation (AD) for CFD code based on source transformation (TAPENADE)
+		\item	Fluid dynamics analysis on air duct cases in Volkswagen Golf vehicle
+		\item	CAD-based (NURBS) shape optimization with mesh deformation based on linear elasticity theory  
+		\item	Membrane process modeling and governing equations implementation
+		\item	Fluid dynamics combined with filaments surface sensitivity analysis on spacers design in membrane channel
+		\end{itemize}
+		
+\item 2009. 9 - 2012. 6  \hspace{2pt} Master Thesis: Study of spectral element method for acoustic propagation problem in non-uniform flows
+		\begin{itemize}
+		\item	The numerical model of acoustic propagation derivation for non-uniform flow
+		\item	Implementation of group velocity method with high accuracy on the absorbing boundary conditions
+		\end{itemize}
+
+\item 2008. 9 - 2009. 6  \hspace{2pt} Bachelor thesis: The design of vortex blower working on high flow rate
+		\begin{itemize}
+		\item High flow rate vortex blower design and 3D model via software Pro-E
+		\end{itemize}
+		
+\end{itemize}
+
+\vspace{-12pt}
+\section*{Selected Publications}
+\vspace{-10pt}
+
+%\printbibliography[env=numbered+bold, heading=none, sorting=ynt, resetnumbers=true]
+
+\nobibliography{publications_yw, abbrev}
+\bibliographystyle{abbrv}
+
+\begin{enumerate}
+\item \bibentry{wang18stablisation}
+\item \bibentry{wang2018}
+\item \bibentry{wang18CAES}
+\item \bibentry{wang2016computational}
+\item \bibentry{zhang2016geometric}
+\item \bibentry{he2016evaluation}
+\item \bibentry{geng2016research}
+\item \bibentry{akbarzadeh2015fixed}
+\item \bibentry{wang2015stabilisation}
+\item \bibentry{he2015maximum}
+\item \bibentry{he2015stand}
+
+%\item \bibentry{}
+\end{enumerate}
+
+
+\vspace{-12pt}
+\section*{Awards and grants}
+\vspace{-10pt}
+\begin{itemize}
+\item 2015 Postgraduate Research Fund from QMUL
+\item 2014 Student grant from SEMS
+\item 2012 Best Graduates (Top 10\%)
+\item 2010 Outstanding Postgraduate Student Award (Top 15\%)
+\item 2009 Postgraduate Innovation Fund Scholarship (1st Class, 2/46)
+\item 2009 Best Graduates (Top 10%)
+\item 2008 \textit{Fusheng} Scholarship (1st Class, Top 15\%)
+\end{itemize}
+
+\vspace{-12pt}
+\section*{Teaching and supervising experiences}
+\vspace{-10pt}
+
+\begin{itemize}
+\item	2012 - 2015  \hspace{2pt} Demonstrating in modules:
+		\begin{itemize}
+		\item	Heat transfer and Fluid Mechanics: teaching assistant
+		\item	Mechanics of Fluids: experiment demonstration and report marking
+		\item	Computer Aided Engineering in Fluids and Solids: OpenFOAM tutorial
+		\end{itemize}
+
+\item	2009 - 2012  \hspace{2pt} Director of Class 2009 in Department of Fluid Machinery
+\end{itemize}
+
+% Footer
+%\begin{center}
+%  \begin{footnotesize}
+%    Last updated: \today \\
+%  \end{footnotesize}
+%\end{center}
+
+\end{document}
