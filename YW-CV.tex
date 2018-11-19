@@ -110,6 +110,7 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 \item Scientific computation, multi-physics modelling and optimisation
 %\item Numerical modeling and optimisation
 \item Computational Fluid Dynamics in multi-disciplinary applications
+\item Data-driven modelling and machine learning 
 
 \end{itemize}
 
@@ -144,6 +145,7 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 \begin{itemize}
 \item 2017. 11 - present \hspace{2pt} Parenting and working from home during relocation, Cambridge, USA
 		\begin{itemize}
+		\item Studying data types/structures and algorithms in C++
 		\item Researching on multi-physics modelling and computation strategies
 		\item Machine Learning by Stanford University on Coursera
 		\item Writing and publishing journal papers; doing peer reviews for journals
@@ -152,42 +154,84 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 		\begin{itemize}
 		\item \textsl{	Next Generation Grid Scale Thermal Energy Storage Technologies}: 
 					\begin{itemize}
-					\item Developed a MATLAB/SIMULINK tool for dynamic modelling thermal energy storage (sensible, phase-change, packed bed, and heat reservoir) for optimally designing heat storage systems;
+					\item Developed a MATLAB/SIMULINK toolbox with the team for designing, controlling and optimising grid-scale thermal energy storage system% (sensible, phase-change, packed bed, and heat reservoir) for optimally designing heat storage systems;
 %					\item Developed dynamic models of various components in compressed air energy storage (CAES) and thermal energy storage (TES), including mechanical components (piston, screw, scroll, centrifugal and axial compressors/expanders), heat exchangers, and air reservoirs in MATLAB/SIMULINK. These models are used for system design, control and optimization;
-					\item Using the developed model, various applications of energy storage were carried out, including optimal design of packed bed thermal energy storage, optimal design of radial turbine in CAES applications, system optimization of grid-scale CAES and TES applications, etc.
+					%\item Using the developed model, various applications of energy storage were carried out, including optimal design of packed bed thermal energy storage, optimal design of radial turbine in CAES applications, system optimization of grid-scale CAES and TES applications, etc.
+					\item Evaluated system performance by assembling and analysing the time-dependent and multi-scale simulation data set in many case studies of energy systems
+					\item Improved the system cycle efficiency by ~10\% by optimizing the storage materials in the heat storage
 					\end{itemize}
 
 		\item	\textsl{Ultra-Supercritical (USC) steam power generation technology with Circulating Fluidized Bed (CFB): Combustion, Materials and Modelling}: 
 					\begin{itemize}
-					\item Developed heat transfer numerical models of a CFB boiler integrated with water-wall heat exchange
+					\item Created a light-weight super-fluid property data package (MATLAB and Fortran), which is an extendible, high speed, and platform-neutral tool for academic and industrial partners in the project
+					\item Developed a data transfer protocol for the heat exchange coupling between the CFB boiler and the the water-wall, to computational-effectively increase fidelity of the system-level modelling
+					\item Built a realistic numerical prototype via collecting and analysing data from industrial partners and collaborating with the Tsinghua University for model comparison and validation
+					%\item Built the super-fluid property data package for Ultra-Supercritical water/steam system
+					%\item Developed heat transfer numerical models of a CFB boiler integrated with water-wall heat exchange
 					\end{itemize}
 		\end{itemize}
 
 \item 2012. 9 - 2017. 1  \hspace{2pt} PhD candidate, working on the project \textsl{About Flow} funded by the European commission
 		\begin{itemize}
-		\item Developed in-house CFD codes (in Fortran) with discrete adjoint sensitivity/gradient solvers using Automatic Differentiation
-		\item Solver development on cell-centered/face-based and node-centered/edge-based data structure
-		\item	SIMPLE-like algorithms vs. Pressure Schur Complement (PSC) method theoretical derivation
-		\item 
+		\item Led the development team of in-house CFD codes (in Fortran) for incompressible flow with discrete adjoint sensitivity/gradient solvers using Automatic Differentiation
+		\begin{itemize}
+		\item Developed solvers on cell-centered/face-based and node-centered/edge-based data structure
+		\item Preprocessed mesh data: sorting, listing, searching and tagging elements and calculating geometric information
+		\item Restructured high-order schemes via node data interpolations
+		\item Proposed the pseudo-inverse approach for Pressure Schur Complement (non-linear flow system algorithms) to solve incompressible Navier-Stokes Equation
+		\item Applied matrix preconditioning techniques for solving discretised linear sub systems with data compressed in Compressed Raw Storage (CRS)
+		%Implemented interfaces for data passing through Compressed Raw Storage (CRS)
+%		
+%		\item Applied matrix preconditioning techniques for solving discretised linear sub systems
+		\item Applied data post-processing and visualization in Matlab and implemented interfaces (in Fortran) to .vtk output files compatible with ParaView 
+		%\end{itemize}
+		%\item	SIMPLE-like algorithms vs. Pressure Schur Complement (PSC) method theoretical derivation
+		%\begin{itemize}
+		\item Proposed the pseudo-inverse approach for Pressure Schur Complement (non-linear flow system algorithms) to solve incompressible Navier-Stokes Equation
+		\item Applied matrix preconditioning techniques for solving discretised linear sub systems
+		\item Improved the solution accuracy with residuals reduced by  ~1 order of magnitude
+		\item Reduced CPU time by ~60\% in a run of both flow and gradient computation (on PCs and the HPC cluster)
+		\item Increased the solver robustness for convergence in wider control parameter space and skewer mesh cases
+		\item Expanded the solver compatibility to other data post-processing tools for better analysing and visualising data
+		\end{itemize}
+		\item CAD-based shape optimization of the S-bend air duct in Volkswagen Golf vehicle for reducing pressure drop
+		\begin{itemize}
+%		Processed the 3D mesh perturbation using NURBS-based parametrisation with continuity constraints for gradient validation of surface nodes w.r.t. control points
+		\item Processed the 3D mesh perturbation using in-house CAD tool (NURBS-based parametrisation with continuity constraints) for gradient calculation of surface nodes w.r.t. control points
+		\item	Developed CAD-based shape optimization driver (in Fortran and Shell script)
+		\item Optimised the shape of S-bend air duct and achieved pressure loss reduction by ~20\%%analysed fluid dynamics at different inlet speeds%with mesh deformation based on linear elasticity theory
+		\end{itemize}
 		%Gradient validation on 
-		Validated in-house CAD tool (NsPCC: NURBS-based parametrisation with continuity constraints) for gradient calculation of surface nodes w.r.t. control points
-		\item	Developed CAD-based shape optimization driver; optimised the shape of S-bend air duct in Volkswagen Golf vehicle, and analysed fluid dynamics at different inlet speeds%with mesh deformation based on linear elasticity theory
+		
+		
 		%\item	Fluid dynamics analysis on  shape optimisation cases 
-		\item	Developed and implemented numerical models for Pressure Retarded Osmosis (PRO) and Reverse Osmosis (RO) membrane process
+		\item	Node-based shape optimisation of the filaments in membrane channels for reducing pressure drop and increasing mass transfer rate
+		%Developed and implemented numerical models for Pressure Retarded Osmosis (PRO) and Reverse Osmosis (RO) membrane process
 					\begin{itemize}
-					\item Developed a membrane model library (in MATLAB), simulating the flow and mass transfer of water and salts in desalination membrane processes;
-					\item Implemented particle swarm optimization algorithm, differential evolutionary optimization algorithm, non-dominated sorting genetic algorithm II (NSGA-II) in MATLAB;
-					\item Applied the MATLAB-based model library and the implemented optimization algorithms to various applications of system optimization, e.g. optimal operation of desalination system, system design of solar powered desalination, etc.
+					\item Developed and implemented numerical models for Pressure Retarded Osmosis (PRO) and Reverse Osmosis (RO) membrane process (in OpenFOAM and Fortran codes)
+%					\item Validated the numerical models with experiment data
+					\item Computed mass transport across the membrane in dual-channel flow using OpenFOAM preprocessing tools
+					
+					%\item Implemented particle swarm optimization algorithm, differential evolutionary optimization algorithm, non-dominated sorting genetic algorithm II (NSGA-II) in MATLAB
+					%\item Applied the MATLAB-based model library and the implemented optimization algorithms to various applications of system optimization, e.g. optimal operation of desalination system, system design of solar powered desalination, etc.
+					\item Firstly analysed filament surface sensitivities obtained from discrete adjoint computation
+					\item Designed/Optimised the spacer shape (in Fortran and Shell script) and achieved pressure loss reduction by ~25\% with negligible mass transfer loss					
+					% via gradient-based optimisation driver using discrete adjoint approach and analysed fluid dynamics and filament surface sensitivities
+					\item Developed a membrane model library (in MATLAB) for simulating the flow and mass transfer of water and salts in desalination membrane processes
 					\end{itemize}
-		\item Designed/Optimised the spacer shape via gradient-based optimisation driver using discrete adjoint approach and analysed fluid dynamics and filament surface sensitivities
+		
 		\end{itemize}
 		
-\item 2009. 9 - 2012. 7  \hspace{2pt} Postgraduate researcher working on spectral element method for acoustic propagation problem in non-uniform flows
+\item 2009. 9 - 2012. 7  \hspace{2pt} Postgraduate researcher at School of Energy and Power Engineering, Xi’an Jiaotong University, China
+\begin{itemize} 
+\item Spectral element method for acoustic propagation problem in non-uniform flows
 		\begin{itemize}
-		\item Studied Spectral Element Method, the combination of Finite Element and Spectral discretisation methods% for Mathematical Physics Equations
-		\item	Derived the mathematical description of acoustic propagation in non-uniform flow
-		\item	Implemented group velocity method with high accuracy on the absorbing boundary conditions (in C++)
+		\item Studied Spectral Element Method, the combination of Finite Element and Spectral discretisation methods methods for high-accuracy, multi-scale flow and acoustic coupling computation% for Mathematical Physics Equations
+		\item	Firstly derived the mathematical description of acoustic propagation in non-uniform flow
+		\item	Implemented governing equation and %group velocity method with 
+		high accuracy on the absorbing boundary conditions (in C++)
 		\end{itemize}
+\end{itemize}
 
 \item 2008. 9 - 2009. 6  \hspace{2pt} Undergraduate research project: the design of high flow rate vortex/generative blower
 		\begin{itemize}
@@ -253,7 +297,9 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 \begin{itemize}
 \item	2012 - 2015  \hspace{2pt} Teaching and demonstrating in undergraduate courses:
 			\begin{itemize}
-			\item Heat Transfer and Fluid Mechanics, Mechanics of Fluids and Computer Aided Engineering in Fluids and Solids
+			\item Heat Transfer and Fluid Mechanics: coursework tutorial
+			\item Mechanics of Fluids: lab demonstration and reports marking
+			\item Computer Aided Engineering in Fluids and Solids: OpenFOAM tutorial
 			\end{itemize}
 
 %		\begin{itemize}
