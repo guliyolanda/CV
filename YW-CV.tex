@@ -103,12 +103,14 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 %\ul{\Huge\textbf{Some text\mbox{\hspace{1in}}}}
 
 \vspace{-12pt}
-\section*{Research Interests}
+\section*{Interests}
 \vspace{-10pt}
 \begin{itemize}
-\item Computational Fluid Dynamics in multi-disciplinary applications
-\item Scientific computation, multi-physics modelling and optimisation
-\item Energy (generation, storage, and utilization) system modelling and optimization
+\item Computational Fluid Dynamics
+\item Engineering simulation/computation and optimisation
+\item Code development and high performance computing
+% \item Energy (generation, storage, and utilization) system modelling and optimization
+
 %\item Numerical modeling and optimisation
 %\item Data-driven modelling and machine learning 
 
@@ -120,7 +122,7 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 \begin{itemize}
 \item Numerical methods for Partial Differential Equations: algorithms, discretisation schemes and linear solvers
 \item Multi-scale and multi-physics modelling, numerical optimisation: stochastic and deterministic methods
-%\item Finite Volume Method and Spectral Element Method (Finite Element Method + Spectral Method)
+\item Finite Volume Method and Spectral Element Method (Finite Element Method + Spectral Method)
 %\item Numerical optimisation: stochastic and deterministic methods
 \item Fortran, MATLAB/SIMULINK and C++ programming
 %\item Chemical Engineering process/system simulation tool: 
@@ -144,19 +146,21 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 \section*{Work/Research Experience}
 \vspace{-10pt}
 \begin{itemize}
-\item 2018. 12 - present \hspace{2pt} Flight Data Analyst Intern at Altaeros, Somerville, Massachusetts, United States
+\item 2018. 12 - present \hspace{2pt} Flight Data Analyst at Altaeros, Somerville, Massachusetts, United States
 	\begin{itemize}
-	\item Post-processing day-to-day flight field test data including aerostat motion, environmental and diagnosis data
-	\item Analysing flight performance under environment variations
-	\item Developing automatic data processing/analysing tools and maintaining codebase and improving robustness (in Matlab/SIMULINK and Batch Script)
-	\item Cooperating with mechanical, electrical, control and other teams to design aerostats
+	\item Processing day-to-day flight field test data and work with the mechanical, electrical, control teams to optimise the design of aerostats 
+% 	for including aerostat motion, environmental and diagnosis data
+% 	\item Analysing flight performance under environment variations
+	\item Developing automatic data processing/analysing tools and maintaining codebase and improving robustness
+	%(in Matlab/SIMULINK and Batch Script)
+% 	\item Cooperating with mechanical, electrical, control and other teams to design aerostats
 	\end{itemize}
-\item 2017. 11 - 2018. 12 \hspace{2pt} Parenting and working from home during relocation, Cambridge, USA
+\item 2017. 11 - 2018. 12 \hspace{2pt} Paternity, parenting and working from home during relocation, Cambridge, USA
 		\begin{itemize}
-		\item Studying data types/structures and algorithms in C++
-		\item Researching on multi-physics modelling and computation strategies
-		\item Machine Learning by Stanford University on Coursera
-		\item Writing and publishing journal papers; doing peer reviews for journals
+% 		\item Studying data types/structures and algorithms in C++
+% 		\item Researching on multi-physics modelling and computation strategies
+		\item Machine Learning taught by Stanford University on Coursera
+		\item Writing and publishing journal papers %doing peer reviews for journals
 		\end{itemize}		
 \item 2017. 3 - 2017. 10  \hspace{2pt} Research fellow on projects funded by Engineering and Physical Science Research Council (EPSRC), School of Engineering, University of Warwick, Coventry, United Kingdom
 		\begin{itemize}
@@ -165,15 +169,15 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 					\item Developed a MATLAB/SIMULINK toolbox with the team for designing, controlling and optimising grid-scale thermal energy storage system% (sensible, phase-change, packed bed, and heat reservoir) for optimally designing heat storage systems;
 %					\item Developed dynamic models of various components in compressed air energy storage (CAES) and thermal energy storage (TES), including mechanical components (piston, screw, scroll, centrifugal and axial compressors/expanders), heat exchangers, and air reservoirs in MATLAB/SIMULINK. These models are used for system design, control and optimization;
 					%\item Using the developed model, various applications of energy storage were carried out, including optimal design of packed bed thermal energy storage, optimal design of radial turbine in CAES applications, system optimization of grid-scale CAES and TES applications, etc.
-					\item Evaluated system performance by assembling and analysing the time-dependent and multi-scale simulation data set in many case studies of energy systems
-					\item Improved the system cycle efficiency by \textasciitilde 10\% by optimizing the storage materials in the heat storage
+					\item Evaluated system performance by assembling and analysing time-dependent and multi-scale simulation data sets in many case studies of energy systems
+					\item Improved the system cycle efficiency by $\sim$10\% by optimising the storage materials in the heat storage
 					\end{itemize}
 
 		\item	\textsl{Ultra-Supercritical (USC) steam power generation technology with Circulating Fluidized Bed (CFB): Combustion, Materials and Modelling}: 
 					\begin{itemize}
-					\item Created a light-weight super-fluid property data package (MATLAB and Fortran), which is an extendible, high speed, and platform-neutral tool for academic and industrial partners in the project
-					\item Developed a data transfer protocol for the heat exchange coupling between the CFB boiler and the the water-wall, to computational-effectively increase fidelity of the system-level modelling
-					\item Built a realistic numerical prototype via collecting and analysing data from industrial partners and collaborating with the Tsinghua University for model comparison and validation
+					\item Created a light-weight super-fluid property data package (MATLAB and Fortran), which is an extendible and comupational-efficient tool for academic and industrial partners in the project
+					\item Developed a tool to couple heat exchange between the CFB boiler and the the water-wall, increasing the system-level modelling fidelity without negligible computational increases
+					\item Built and validated a program prototype to simulate industrial-scale CFB boilers with the collected data from industrial partners and the Tsinghua University 
 					%\item Built the super-fluid property data package for Ultra-Supercritical water/steam system
 					%\item Developed heat transfer numerical models of a CFB boiler integrated with water-wall heat exchange
 					\end{itemize}
@@ -191,14 +195,14 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 		%Implemented interfaces for data passing through Compressed Raw Storage (CRS)
 %		
 %		\item Applied matrix preconditioning techniques for solving discretised linear sub systems
-		\item Applied data post-processing and visualization in Matlab and implemented interfaces (in Fortran) to .vtk output files compatible with ParaView 
+% 		\item Applied data post-processing and visualization in Matlab and implemented interfaces (in Fortran) to .vtk output files compatible with ParaView 
 		%\end{itemize}
-		%\item	SIMPLE-like algorithms vs. Pressure Schur Complement (PSC) method theoretical derivation
+		\item	SIMPLE-like algorithms vs. Pressure Schur Complement (PSC) method theoretical derivation
 		%\begin{itemize}
 		\item Proposed the pseudo-inverse approach for Pressure Schur Complement (non-linear flow system algorithms) to solve incompressible Navier-Stokes Equation
 		\item Applied matrix preconditioning techniques for solving discretised linear sub systems
 		\item Improved the solution accuracy with residuals reduced by 1 order of magnitude
-		\item Reduced CPU time by \textasciitilde 60\% in a run of both flow and gradient computation (on PCs and the HPC cluster)
+		\item Reduced CPU time by $\sim$60\% in a run of both flow and gradient computation (on PCs and the HPC cluster)
 		\item Increased the solver robustness for convergence in wider control parameter space and skewer mesh cases
 		\item Expanded the solver compatibility to other data post-processing tools for better analysing and visualising data
 		\end{itemize}
@@ -207,7 +211,7 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 %		Processed the 3D mesh perturbation using NURBS-based parametrisation with continuity constraints for gradient validation of surface nodes w.r.t. control points
 		\item Processed the 3D mesh perturbation using in-house CAD tool (NURBS-based parametrisation with continuity constraints) for gradient calculation of surface nodes w.r.t. control points
 		\item	Developed CAD-based shape optimization driver (in Fortran and Shell script)
-		\item Optimised the shape of S-bend air duct and achieved pressure loss reduction by \textasciitilde 20\%%analysed fluid dynamics at different inlet speeds%with mesh deformation based on linear elasticity theory
+		\item Optimised the shape of S-bend air duct and achieved pressure loss reduction by $\sim$20\%%analysed fluid dynamics at different inlet speeds%with mesh deformation based on linear elasticity theory
 		\end{itemize}
 		%Gradient validation on 
 		
@@ -223,7 +227,7 @@ Homepage:  \href{https://guliyolanda.github.io}{\tt https://guliyolanda.github.i
 					%\item Implemented particle swarm optimization algorithm, differential evolutionary optimization algorithm, non-dominated sorting genetic algorithm II (NSGA-II) in MATLAB
 					%\item Applied the MATLAB-based model library and the implemented optimization algorithms to various applications of system optimization, e.g. optimal operation of desalination system, system design of solar powered desalination, etc.
 					\item Firstly analysed filament surface sensitivities obtained from discrete adjoint computation
-					\item Designed/Optimised the spacer shape (in Fortran and Shell script) and achieved pressure loss reduction by \textasciitilde 25\% with negligible mass transfer loss					
+					\item Designed/Optimised the spacer shape (in Fortran and Shell script) and achieved pressure loss reduction by $\sim$25\% with negligible mass transfer loss					
 					% via gradient-based optimisation driver using discrete adjoint approach and analysed fluid dynamics and filament surface sensitivities
 					\item Developed a membrane model library (in MATLAB) for simulating the flow and mass transfer of water and salts in desalination membrane processes
 					\end{itemize}
