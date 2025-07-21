@@ -1,6 +1,29 @@
+# LaTeX auxiliary files
 *.bbl
 *.out
 *.log
 *.synctex.gz
 *.blg
 *.aux
+*.dvi
+*.pdf
+
+# LaTeXmk files
+*.fdb_latexmk
+*.fls
+
+# Table of contents, lists
+*.toc
+*.lof
+*.lot
+
+# Beamer files
+*.nav
+*.snm
+
+# Biber files
+*.run.xml
+*.bcf
+
+# Verbose output
+*.vrb
